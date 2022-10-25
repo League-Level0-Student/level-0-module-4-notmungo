@@ -11,7 +11,7 @@ public class StarStudent {
 		
 		// 1. Initialize passedExam to a value.
 
-		boolean passedExam;
+		boolean passedExam.equals20;
 		
 		// 2. Call the didYouPass method with the variable you just initialized
 		//    as the parameter so that it shows a pop-up.
