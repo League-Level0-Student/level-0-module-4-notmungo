@@ -1,4 +1,4 @@
-package _02_boolean._5_googly_eyes;
+	package _02_boolean._5_googly_eyes;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -17,7 +17,7 @@ import processing.core.PImage;
  *    face = loadImage("face.jpg");
  * 
  * 4. Resize your face image to the size of the window using the resize() method.
- * 
+ *  
  * 5. In the draw() method, place a white ellipse over the left eye of your image.
       HINT: To find out where to put it, add code to print the mouseX and
       mouseY where you click the mouse.
@@ -36,6 +36,7 @@ import processing.core.PImage;
  *    within. When mouseX and mouseY goes outside of these bounds, set it back
  *    to the boundary. Put this code before you draw the pupils.
  */
+
 public class GooglyEyes extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
