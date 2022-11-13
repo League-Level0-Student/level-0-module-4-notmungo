@@ -1,5 +1,7 @@
 	package _02_boolean._5_googly_eyes;
 
+import java.awt.Color;
+
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -51,12 +53,41 @@ public class GooglyEyes extends PApplet {
     @Override
     public void setup() {
     face = loadImage("face.jpeg");
-    
+    face.resize(800, 600);
     }
 
     @Override
     public void draw() {
- 
+    int pupilX = mouseX;
+    int pupilY = mouseY;
+    int pupilX2 = mouseX;
+    int pupilY2 = mouseY;
+    if(mouseY <125) {
+    	pupilY = 125;
+    	pupilY2 = 125;
+    }
+    if(mouseX <143) {
+    	pupilX = 143;
+    }
+    if(mouseX >300) {
+    	pupilX = 300;
+    }
+    if(mouseX > 580) {
+    	pupilX2 = 580;
+    }
+    
+    
+    background(face);
+    fill(255,255,255) ;
+    ellipse(244,295,206,342 );
+     System.out.println(mouseX +" "+ mouseY);
+     fill(255,255,255);
+     ellipse(244 + 300,295,206,342);
+     fill(0,0,0);
+     ellipse(pupilX,pupilY,70,70);
+     fill(0,0,0);
+     ellipse(pupilX2,pupilY2,70,70);
+     
     }
 
     static public void main(String[] args) {
