@@ -15,7 +15,7 @@ import processing.core.PImage;
  * 1. Find a Where's Waldo image and copy it into the /images folder at the
  *    top level of this module OR use the provided waldo.jpg image.
  * 
- * 2. Declare a variable for the image:
+ * 2. Declare a variable for the i000mage:
  *    PImage face;
  * 
  * In the setup() method:
@@ -50,12 +50,27 @@ public class WheresWaldo extends PApplet {
 
     @Override
     public void setup() {
-        
+    waldo = loadImage("waldo.jpg");
+    waldo.resize(600, 400);
     }
 
     @Override
     public void draw() {
-        
+    background(waldo);
+    println("X: " + mouseX + " Y: " + mouseY);
+    if(mousePressed) {
+    if(mouseX == 295 && mouseY == 81) {
+    playWhoohoo();
+    
+    }
+    else playDoh(); {
+    	
+    }
+    
+    	
+    
+    }
+    
     }
 
     static public void main(String[] args) {
