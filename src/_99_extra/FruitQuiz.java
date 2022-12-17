@@ -29,7 +29,13 @@ int c =67;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
-			
+			if (question2.isShowing()) {
+				correct();
+				nextQuestion(question3);
+			}
+			else {
+				incorrect();
+			}
 			// 13. check if it is right or wrong like you did for question1
 		
 			
